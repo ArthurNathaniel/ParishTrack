@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $_SESSION['admin_email'] = $row['email'];
 
                     // Redirect to admin dashboard or other page
-                    header("Location: dashboard.php");
+                    header("Location: net_revenue.php");
                     exit();
                 } else {
                     $loginErr = "Invalid password.";

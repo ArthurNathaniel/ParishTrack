@@ -28,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['search_term'], $_GET['st
 
     // Prepare and execute the query
     if ($stmt = $conn->prepare($sql)) {
+        // Bind parameters based on which filters are applied
         if (!empty($startDate) && !empty($endDate) && !empty($searchTerm)) {
             $searchTerm = "%$searchTerm%";
             $stmt->bind_param("sss", $startDate, $endDate, $searchTerm);
@@ -36,14 +37,20 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['search_term'], $_GET['st
         } elseif (!empty($searchTerm)) {
             $searchTerm = "%$searchTerm%";
             $stmt->bind_param("s", $searchTerm);
-        } else {
-            $stmt->execute();
         }
 
+        // Execute the query
+        $stmt->execute();
+
+        // Get the result set
         $result = $stmt->get_result();
+        
+        // Fetch all records
         while ($row = $result->fetch_assoc()) {
             $expenditures[] = $row;
         }
+        
+        // Close the prepared statement
         $stmt->close();
     }
 } else {

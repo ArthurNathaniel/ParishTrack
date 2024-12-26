@@ -1,0 +1,54 @@
+.revenue_expenses_all {
+    padding: 0 25%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.revenue_expenses_box {
+    background: #fff;
+    padding: 0 5%;
+    padding-block: 50px;
+    width: 100%;
+}
+
+.revenue_expenses_title h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top:30px;
+}
+
+ th,
+ td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+ th {
+    background-color:#336AEA;
+    color: #fff;
+}
+
+ tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+ td {
+    text-align: left;
+}
+
+ td[colspan="2"] {
+    text-align: left;
+    color: #999;
+}
