@@ -3,10 +3,10 @@ ParishTrack is a web app for Catholic parishes in Ghana to manage finances with 
 
 # Key Features:
 
-Real-time tracking of parish collections and donations 
+1. Real-time tracking of parish collections and donations 
 
-Financial reporting and insights for better decision-making
+2. Financial reporting and insights for better decision-making
 
-Easy-to-use interface for managing parish finances
+3. Easy-to-use interface for managing parish finances
 
-Secure and transparent financial record-keeping
+4. Secure and transparent financial record-keeping
