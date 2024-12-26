@@ -38,6 +38,27 @@ body {
 .forms input:focus{
     outline: none;
 }
+.forms select{
+    height: 45px;
+    width: 100%;
+    border: 1.5px solid #ddd;
+    padding-left: 3%; 
+}
+
+.forms select:focus{
+    outline: none;
+}
+.forms textarea{
+    height: 300px;
+    width: 100%;
+    border: 1.5px solid #ddd;
+    padding-left: 3%;
+    padding-top: 20px; 
+}
+
+.forms textarea:focus{
+    outline: none;
+}
 .logo_name{
     padding-block: 30px;
 }
