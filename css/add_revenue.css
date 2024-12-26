@@ -1,0 +1,53 @@
+.add_revenue_all{
+    padding: 0 35%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_revenue_box{
+    background-color: #fff;
+   width: 100%;
+   padding: 0 5%;
+   padding-block: 50px;
+}
+
+.add_revenue_title{
+    text-align: center;
+}
+
+.add_revenue_title span{
+    color: #336AEA;
+}
+
+.add_revenue_title p{
+    font-size: 12px;
+}
+
+
+@media only screen and (max-width: 1110px) {
+    .add_revenue_all{
+        padding: 0 25%;
+    }
+}
+
+
+@media only screen and (max-width: 910px) {
+    .add_revenue_all{
+        padding: 0 20%;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .add_revenue_all{
+        padding: 0 10%;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .add_revenue_all{
+        padding: 0 5%;
+    }
+}
