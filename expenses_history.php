@@ -105,6 +105,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['search_term'], $_GET['st
                     <button type="submit">Search</button>
                 </div>
             </form>
+<br>
+<br>
 
             <!-- Expenditure History Table -->
             <table>

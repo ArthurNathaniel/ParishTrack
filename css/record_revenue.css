@@ -1,11 +1,15 @@
 .record_revenue_all {
     padding: 0 25%;
     height: 100vh;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    overflow-y: scroll;
+    align-items: center; */
+    overflow-y: auto; /* Changed to auto for better UX */
+  
+    /* border: 2px solid red; */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #336aea #ecf0f1; /* Thumb and track color */
 }
 
 .record_revenue_box {
@@ -13,6 +17,7 @@
     padding: 0 5%;
     padding-block: 50px;
     width: 100%;
+    margin-top: 50px;
 }
 
 .record_revenue_title h2 {
@@ -51,3 +56,32 @@
     text-align: left;
     color: #999;
 }
+
+
+@media only screen and (max-width: 1110px) {
+    .record_revenue_all {
+   
+  
+      padding: 0 25%;
+    }
+  }
+  
+  @media only screen and (max-width: 910px) {
+    .record_revenue_all {
+   
+      padding: 0 25%;
+    }
+  }
+  
+  @media only screen and (max-width: 710px) {
+    .record_revenue_all {
+      padding: 0 10%;
+    }
+  }
+  
+  @media only screen and (max-width: 510px) {
+    .record_revenue_all {
+      padding: 0 5%;
+    }
+  }
+  

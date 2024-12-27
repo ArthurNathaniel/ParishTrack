@@ -1,54 +1,87 @@
 .revenue_expenses_all {
-    padding: 0 25%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-y: scroll;
+  padding: 0 25%;
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  /* margin: 0 auto; */
+  overflow-y: auto; /* Changed to auto for better UX */
+  
+    /* border: 2px solid red; */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #336aea #ecf0f1; /* Thumb and track color */
 }
 
 .revenue_expenses_box {
-    background: #fff;
-    padding: 0 5%;
-    padding-block: 50px;
-    width: 100%;
+  background: #fff;
+  padding: 0 5%;
+  padding-block: 50px;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .revenue_expenses_title h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top:30px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
 }
 
- th,
- td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: left;
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
 }
 
- th {
-    background-color:#336AEA;
-    color: #fff;
+th {
+  background-color: #336aea;
+  color: #fff;
 }
 
- tr:nth-child(even) {
-    background-color: #f9f9f9;
+tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
- td {
-    text-align: left;
+td {
+  text-align: left;
 }
 
- td[colspan="2"] {
-    text-align: left;
-    color: #999;
+td[colspan="2"] {
+  text-align: left;
+  color: #999;
+}
+
+@media only screen and (max-width: 1110px) {
+  .revenue_expenses_all {
+ 
+
+    padding: 0 25%;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .revenue_expenses_all {
+ 
+    padding: 0 25%;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+    .revenue_expenses_all {
+    padding: 0 10%;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+    .revenue_expenses_all {
+    padding: 0 5%;
+  }
 }
